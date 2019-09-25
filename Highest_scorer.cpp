@@ -9,13 +9,17 @@ struct Array
 
 int main()
 {
-     ll runs,wickets,rollno,i,players;
+     ll Run,WIC,rollno,i,players;
      struct Array A[100];
      cout<<"Enter the number of players\n";
      cin>>players;
      for(i=1;i<=players;i++)
       {     cout<<"Enter the 1:Rollnumber 2:runs and 3:wickets\n";
-            cin>>A->roll>>A->runs>>A->wickets;
+            cin>>rollno>>Run>>WIC;
+            
+            A->runs+=Run;
+            A->wickets+=WIC;
+
       }
      for(i=1;i<=players;i++)
      {
